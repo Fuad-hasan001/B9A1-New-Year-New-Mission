@@ -1,3 +1,5 @@
+/* universal */
+
 html {
     height: 100%;
 }
@@ -12,7 +14,7 @@ body {
     margin: 0;
 }
 
-section{
+section {
     margin-bottom: 12vh;
 }
 
@@ -56,6 +58,11 @@ p {
     padding: 10px;
     border-radius: 10px;
 }
+
+
+
+
+
 
 /* --------header---------- */
 /* Initial banner */
@@ -119,6 +126,12 @@ p {
     height: 50vh;
 }
 
+
+
+
+
+
+
 /* ------------main------------ */
 /* Midnight party */
 #party-banner {
@@ -155,6 +168,10 @@ p {
     background-color: transparent
 }
 
+
+
+
+
 /* place, Date, time */
 #schedule {
     height: 50vh;
@@ -169,7 +186,7 @@ p {
 
     position: absolute;
     top: 15%;
-    left: 35%;
+    left: 38%;
 }
 
 .schedule-info span {
@@ -179,6 +196,10 @@ p {
 #schedule-btn {
     background-color: red;
 }
+
+
+
+
 
 
 /* best offer */
@@ -240,40 +261,80 @@ p {
     right: 20%;
 }
 
+
+
+
+
 /* Holidays sale 50% */
-#holidays-sale {
+#holidays-sale-container {
     height: 90vh;
-    /* background-color: red; */
-    border: 1px solid goldenrod;
+
 }
 
-#holidays-sale-items {}
+.Holiday-sale-outer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
-.sale-item-info {
-    width: 40vw;
-    height: 30vh;
-    border: 1px solid red;
+.Holidays-sale-info {
+    width: 45vw;
     text-align: center;
 }
 
-/* ---------------------2 */
-/* .sale-item-img{
-    height: 30vh;
-    border: 1px solid blue;
-    position: relative;
-    
+.Holidays-sale-info h1 {
+    font-size: 40px;
+    margin: 0;
 }
 
-.sale-image{
-    width: 15vw;
-    position: absolute;
-    right: 0%;
-} */
-/* -------------------------2 */
-.sale-item-design {
-    height: 30vh;
-    border: 1px solid purple;
+
+.holidays-img-container {
+    height: 40vh;
+    position: relative;
 }
+
+.holidays-img img {
+    width: 20vw;
+    height: 40vh;
+
+    position: absolute;
+    top: 0;
+    right: 2%;
+}
+
+.offer-number-img {
+    width: 10vw;
+    height: 20vh;
+
+    position: absolute;
+    top: 10%;
+    right: 15vw;
+}
+
+.holidays-designs-container {
+    height: 20vh;
+    position: relative;
+}
+
+.holidays-design-1 img {
+    height: 20vh;
+    border-radius: 20px;
+}
+
+.holidays-design-2 {
+    width: 30vw;
+    height: 20vh;
+    position: absolute;
+    top: -180%;
+    left: 10%;
+}
+
+
+
+
+
+
 
 /* ------------------------ */
 
@@ -309,25 +370,60 @@ p {
     border-radius: 10px;
 }
 
-.product-item:hover{
+.product-item:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
 }
 
 @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
 
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+
+
+/* NewsLetter-Subscribe */
 #newsLetter {
     height: 50vh;
     border-radius: 16px;
@@ -340,31 +436,31 @@ p {
     text-align: center;
 }
 
-.newsletter-mail-img{
+.newsletter-mail-img {
     width: 5vw;
 }
 
-#newsLetter-info{
+#newsLetter-info {
     width: 40vw;
 }
 
-.newsletter-subscribe{
+.newsletter-subscribe {
     background-color: white;
     border: 0;
     border-radius: 20px;
 }
 
-.newsletter-subscribe > input{
+.newsletter-subscribe>input {
     border: 1px solid white;
     border-radius: 20px 0 0 20px;
     padding: 15px;
 }
 
-.newsletter-subscribe > input:focus{
+.newsletter-subscribe>input:focus {
     outline: 0;
 }
 
-.newsletter-subscribe button{
+.newsletter-subscribe button {
     background-color: red;
     border-radius: 0 20px 20px 0;
     padding: 15px 30px;
@@ -384,26 +480,28 @@ p {
     color: white;
 }
 
-#contact-container{
+#contact-container {
     width: 1024px;
     margin: auto;
 }
-.address-info{
+
+.address-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.social-contact{
+.social-contact {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2%;
 }
-.social-contact img{
+
+.social-contact img {
     width: 3vw;
 }
 
-#contact hr{
+#contact hr {
     background: rgba(255, 255, 255, 0.15);
 }
