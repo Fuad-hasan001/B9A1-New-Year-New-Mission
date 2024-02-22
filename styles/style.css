@@ -213,7 +213,7 @@ p {
 #best-offer-container {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    /* align-items: center; */
     gap: 3%;
     position: relative;
 }
@@ -336,7 +336,7 @@ p {
 
 
 
-/* ------------------------ */
+
 
 /* portfolio */
 #portfolio {
@@ -504,4 +504,13 @@ p {
 
 #contact hr {
     background: rgba(255, 255, 255, 0.15);
+}
+
+
+
+
+
+/* Responsive Area */
+@media only screen and (max-width:600px) {
+    
 }
